@@ -154,18 +154,18 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   emoji: {
-    fontSize: 48,
+    fontSize: 64,  // CHANGED: was 48
     marginBottom: 12,
   },
   title: {
-    fontSize: 28,
+    fontSize: 36,  // CHANGED: was 28
     fontWeight: '700',
     color: '#D97757',
     textAlign: 'center',
     marginBottom: 8,
   },
   date: {
-    fontSize: 16,
+    fontSize: 20,  // CHANGED: was 16
     color: '#8B7355',
     textAlign: 'center',
   },
@@ -173,7 +173,7 @@ const styles = StyleSheet.create({
     marginBottom: 24,
   },
   prompt: {
-    fontSize: 18,
+    fontSize: 22,  // CHANGED: was 18
     color: '#8B7355',
     marginBottom: 24,
     textAlign: 'center',
@@ -185,9 +185,9 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   numberBadge: {
-    width: 32,
-    height: 32,
-    borderRadius: 16,
+    width: 40,      // CHANGED: was 32
+    height: 40,     // CHANGED: was 32
+    borderRadius: 20,  // CHANGED: was 16
     backgroundColor: '#FFD4A3',
     justifyContent: 'center',
     alignItems: 'center',
@@ -196,7 +196,7 @@ const styles = StyleSheet.create({
   },
   numberText: {
     color: '#D97757',
-    fontSize: 16,
+    fontSize: 20,  // CHANGED: was 16
     fontWeight: '700',
   },
   input: {
@@ -204,9 +204,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFFFFF',
     borderRadius: 16,
     padding: 16,
-    fontSize: 16,
+    fontSize: 20,    // CHANGED: was 16
     color: '#5A4A3A',
-    minHeight: 80,
+    minHeight: 100,  // CHANGED: was 80
     borderWidth: 2,
     borderColor: '#FFE4B5',
     shadowColor: '#D97757',
@@ -239,7 +239,7 @@ const styles = StyleSheet.create({
   },
   saveButtonText: {
     color: '#FFFFFF',
-    fontSize: 18,
+    fontSize: 22,  // CHANGED: was 18
     fontWeight: '700',
   },
   footer: {
@@ -247,7 +247,7 @@ const styles = StyleSheet.create({
     marginTop: 8,
   },
   footerText: {
-    fontSize: 14,
+    fontSize: 18,  // CHANGED: was 14
     color: '#B8A991',
     fontStyle: 'italic',
     textAlign: 'center',
