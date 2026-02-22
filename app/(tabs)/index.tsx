@@ -39,7 +39,6 @@ export default function HomeScreen() {
   };
 
   const saveEntry = async () => {
-    // Check if at least one gratitude is filled
     const hasContent = gratitudes.some(g => g.trim().length > 0);
     
     if (!hasContent) {
@@ -105,7 +104,7 @@ export default function HomeScreen() {
               <TextInput
                 style={styles.input}
                 placeholder={`Something that made you smile...`}
-                placeholderTextColor="#B8A991"
+                placeholderTextColor="#9e8f93"
                 value={gratitudes[index]}
                 onChangeText={(text) => updateGratitude(index, text)}
                 multiline
@@ -139,7 +138,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFF8E7',
+    backgroundColor: '#0f0d0e',
   },
   scrollView: {
     flex: 1,
@@ -154,27 +153,27 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   emoji: {
-    fontSize: 64,  // CHANGED: was 48
+    fontSize: 64,
     marginBottom: 12,
   },
   title: {
-    fontSize: 36,  // CHANGED: was 28
+    fontSize: 36,
     fontWeight: '700',
-    color: '#D97757',
+    color: '#ff4785',
     textAlign: 'center',
     marginBottom: 8,
   },
   date: {
-    fontSize: 20,  // CHANGED: was 16
-    color: '#8B7355',
+    fontSize: 20,
+    color: '#9e8f93',
     textAlign: 'center',
   },
   gratitudeContainer: {
     marginBottom: 24,
   },
   prompt: {
-    fontSize: 22,  // CHANGED: was 18
-    color: '#8B7355',
+    fontSize: 22,
+    color: '#9e8f93',
     marginBottom: 24,
     textAlign: 'center',
     fontWeight: '600',
@@ -185,31 +184,31 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   numberBadge: {
-    width: 40,      // CHANGED: was 32
-    height: 40,     // CHANGED: was 32
-    borderRadius: 20,  // CHANGED: was 16
-    backgroundColor: '#FFD4A3',
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: '#2e2628',
     justifyContent: 'center',
     alignItems: 'center',
     marginRight: 12,
     marginTop: 12,
   },
   numberText: {
-    color: '#D97757',
-    fontSize: 20,  // CHANGED: was 16
+    color: '#ff4785',
+    fontSize: 20,
     fontWeight: '700',
   },
   input: {
     flex: 1,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#1e1a1b',
     borderRadius: 16,
     padding: 16,
-    fontSize: 20,    // CHANGED: was 16
-    color: '#5A4A3A',
-    minHeight: 100,  // CHANGED: was 80
+    fontSize: 20,
+    color: '#f5f0f2',
+    minHeight: 100,
     borderWidth: 2,
-    borderColor: '#FFE4B5',
-    shadowColor: '#D97757',
+    borderColor: '#2e2628',
+    shadowColor: '#ff4785',
     shadowOffset: {
       width: 0,
       height: 2,
@@ -219,13 +218,13 @@ const styles = StyleSheet.create({
     elevation: 3,
   },
   saveButton: {
-    backgroundColor: '#E89A71',
+    backgroundColor: '#ff4785',
     borderRadius: 24,
     padding: 18,
     alignItems: 'center',
     marginTop: 12,
     marginBottom: 24,
-    shadowColor: '#D97757',
+    shadowColor: '#ff4785',
     shadowOffset: {
       width: 0,
       height: 4,
@@ -235,11 +234,11 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   savedButton: {
-    backgroundColor: '#87C4A5',
+    backgroundColor: '#ffab21',
   },
   saveButtonText: {
-    color: '#FFFFFF',
-    fontSize: 22,  // CHANGED: was 18
+    color: '#ffffff',
+    fontSize: 22,
     fontWeight: '700',
   },
   footer: {
@@ -247,8 +246,8 @@ const styles = StyleSheet.create({
     marginTop: 8,
   },
   footerText: {
-    fontSize: 18,  // CHANGED: was 14
-    color: '#B8A991',
+    fontSize: 18,
+    color: '#9e8f93',
     fontStyle: 'italic',
     textAlign: 'center',
   },
